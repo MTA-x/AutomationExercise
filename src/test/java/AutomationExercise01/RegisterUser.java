@@ -1,8 +1,11 @@
 package AutomationExercise01;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 import utilities.WebDriverFactory;
 
 public class RegisterUser {
@@ -18,5 +21,11 @@ public class RegisterUser {
     @AfterClass
     public void tearsDown(){
         driver.quit();
+    }
+
+    @Test (priority = 1)
+    public void homepage_visibility(){
+        WebElement homePageButton = driver.findElement(By.linkText("Home"));
+        System.out.println("homePageButton.isDisplayed() = " + homePageButton.isDisplayed());
     }
 }
