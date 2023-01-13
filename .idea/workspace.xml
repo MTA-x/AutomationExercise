@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6cdf141-f8ae-4b53-aab4-6ef9c57e27e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/AutomationExercise02/LoginUserWithCorrectInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AutomationExercise03/ContactUsForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AutomationExercise01/RegisterUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AutomationExercise01/RegisterUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AutomationExercise02/LoginUserWithIncorrectInfo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +91,7 @@
       <module name="AutomationExercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AutomationExercise01.*" />
+          <option name="PATTERN" value="AutomationExercise03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,7 +108,7 @@
       <module name="AutomationExercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AutomationExercise01.*" />
+          <option name="PATTERN" value="AutomationExercise03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,7 +126,7 @@
       <module name="AutomationExercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AutomationExercise01.*" />
+          <option name="PATTERN" value="AutomationExercise03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,7 +144,7 @@
       <module name="AutomationExercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AutomationExercise01.*" />
+          <option name="PATTERN" value="AutomationExercise03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -183,7 +181,7 @@
       <workItem from="1673614130480" duration="2677000" />
       <workItem from="1673617101729" duration="6860000" />
       <workItem from="1673624901090" duration="62000" />
-      <workItem from="1673625594871" duration="821000" />
+      <workItem from="1673625594871" duration="1007000" />
     </task>
     <task id="LOCAL-00001" summary="utilities package created">
       <created>1673614652130</created>
@@ -213,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673624923474</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="...">
+      <created>1673626476737</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673626476737</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +241,7 @@
     <MESSAGE value="First Case PASSED" />
     <MESSAGE value="First Test Class Created" />
     <MESSAGE value="NEW TEST CASES CREATEAD" />
-    <option name="LAST_COMMIT_MESSAGE" value="NEW TEST CASES CREATEAD" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
 </project>
