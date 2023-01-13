@@ -70,6 +70,7 @@ public class RegisterUser {
         System.out.println("radioButton.isSelected() = " + radioButton.isSelected());
     }
 
+
     @Test(priority = 4)
     public void fill_input_details() {
         //Fill details:  Title, Name, Email, Password,
@@ -131,11 +132,12 @@ public class RegisterUser {
             selectDropdown.selectByVisibleText(valuesOfDropdownList.get(i));
         }
     }
-
+    
     @Test(priority = 7)
     public void create_account_button_test() {
         //Click 'Create Account button'
-        ////button[@data-qa='create-account']
+
+        // ---> //button[@data-qa='create-account'] < ------->x //button[contains(text() , 'Create Account')]
         WebElement createAccountButton = driver.findElement(By.xpath("//button[contains(text(), 'Create Account')]"));
         createAccountButton.click();
     }

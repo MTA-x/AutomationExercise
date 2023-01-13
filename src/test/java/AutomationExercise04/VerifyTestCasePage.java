@@ -1,17 +1,17 @@
-package AutomationExercise03;
+package AutomationExercise04;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import utilities.WebDriverFactory;
 
-public class ContactUsForm {
+public class VerifyTestCasePage {
 
     WebDriver driver;
-
     @BeforeClass
     public void setupMethod() {
         driver = WebDriverFactory.getDriver("chrome");
@@ -24,11 +24,15 @@ public class ContactUsForm {
         driver.quit();
     }
 
-    @Test(priority = 1)
-    public void homepage_visibility() {
-        WebElement homePageButton = driver.findElement(By.linkText("Home"));
-        System.out.println("homePageButton.isDisplayed() = " + homePageButton.isDisplayed());
+    @Test
+    public void test_case_button(){
+        WebElement testCaseButton = driver.findElement(By.xpath("//button[contains(text() , 'Test Cases')]"));
+        testCaseButton.click();
+
+        String actualTitle = driver.getTitle()
+                ,expectedTitle = "Automation Practice Website for UI Testing - Test Cases";
+
+
+        Assert.assertEquals(actualTitle , expectedTitle , "TITLE VERIFICATION FAILED");
     }
-
-
 }
