@@ -48,11 +48,11 @@ public class RegisterUser {
 
         //LOCATE NAME AND SEND KEYS
         WebElement inputName = driver.findElement(By.xpath("//input[@data-qa='signup-name']"));
-        inputName.sendKeys("testUserName123456");
+        inputName.sendKeys("testName12346");
 
         //LOCATE MAIL AND SEND KEYS
         WebElement inputMail = driver.findElement(By.xpath("//input[@data-qa='signup-email']"));
-        inputMail.sendKeys("test_test1234@gmail.com");
+        inputMail.sendKeys("test_test12344@gmail.com");
 
         //LOCATE CLICK BUTTON AND CLICK
         WebElement signupButton = driver.findElement(By.xpath("//button[@data-qa='signup-button']"));
@@ -121,25 +121,26 @@ public class RegisterUser {
                 , "//select[@id='years']"
                 , "//select[@id='country']"));
 
-        List<String> valuesOfDropdownList = new ArrayList<>(Arrays.asList("1", "January", "2000", "United States"));
+        List<String> valuesOfDropdownList = new ArrayList<>(Arrays.asList("1"
+                , "January"
+                , "2000"
+                , "United States"));
 
         for (int i = 0; i < xpathsOfDropdownList.size(); i++) {
             Select selectDropdown = new Select(driver.findElement(By.xpath(xpathsOfDropdownList.get(i))));
             selectDropdown.selectByVisibleText(valuesOfDropdownList.get(i));
-
         }
-
     }
 
     @Test(priority = 7)
     public void create_account_button_test() {
         //Click 'Create Account button'
         ////button[@data-qa='create-account']
-        WebElement createAccountButton = driver.findElement(By.xpath("//button[@data-qa='create-account']"));
+        WebElement createAccountButton = driver.findElement(By.xpath("//button[contains(text(), 'Create Account')]"));
         createAccountButton.click();
     }
 
-    @Test (priority = 8)
+    @Test(priority = 8)
     public void account_created_text_test() {
         //Verify that 'ACCOUNT CREATED!' is visible
         WebElement accountCreatedText = driver.findElement(By.xpath("//h2[contains(text(), 'New User Signup!')]"));
